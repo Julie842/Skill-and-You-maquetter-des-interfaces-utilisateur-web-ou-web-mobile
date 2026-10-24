@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Résumé in English</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Devicon for skills logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="cv-en.html">My Résumé</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="cv-fr.html">Français</a>
+            <a class="nav-link active" href="cv-en.html">English</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main content -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- Left column -->
+            <aside class="col-md-4 text-center mb-4">
+                <div class="p-4 profile-card shadow-sm">
+                    <img src="img/photo-profil.jpg" alt="Profile picture" class="img-fluid rounded-circle custom-profile-img mb-3">
+                    <h1 class="h4 mb-1">Julie Gérard</h1>
+                    <p class="text-muted small">Aspiring Web & Mobile Developer</p>
+                    <hr style="color: var(--sage-light)">   
+                    <h2 class="h6 text-uppercase text-secondary mb-3">Contact details</h2>
+                    <p class="small mb-1">Email: julie.gerard743@sfr.fr</p>
+                    <p class="small mb-4">Phone: +33 7 62 96 12 00</p>
+
+                    <div class="d-flex justify-content-center gap-3 my-3">
+                        <a href="https://www.linkedin.com/in/julie-gerard-417019198" target="_blank" rel="noopener noreferrer" class="text-dark fs-4" title="LinkedIn profile">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Julie842" target="_blank" rel="noopener noreferrer" class="text-dark fs-4" title="GitHub profile">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <a href="mailto:julie.gerard743@sfr.fr" class="btn btn-custom-primary w-100">Contact me</a>
+                </div>
+            </aside>
+
+            <!-- Right column with tab menu -->
+            <section class="col-md-8">
+                
+                <ul class="nav nav-pills mb-4 justify-content-center" id="cvTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="true">Education</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="experiences-tab" data-bs-toggle="pill" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Work experiences</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Projects</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="skills-tab" data-bs-toggle="pill" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="cvTabContent">
+                    
+                    <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Education</h3>
+                                <ul class="timeline-list">
+                                    <li class="timeline-item">
+                                        <strong>Since April 2026</strong> - Web & Mobile Web Development Training
+                                        <br><span class="text-muted small">Skill & You, Montrouge</span>
+                                        <ul class="mt-2 small text-secondary">
+                                            <li>Mastering multiple programming languages</li>
+                                            <li>Gaining proficiency in industry-standard tools</li>
+                                            <li>Developing expertise in UX/UI design and conceptualization</li>
+                                            <li>Proficiency in web hosting and deployment workflows</li>
+                                        </ul>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>2025</strong> - DigiStart Training 
+                                        <br><span class="text-muted small">Konexio, Paris</span>
+                                        <ul class="mt-2 small text-secondary">
+                                            <li>Discovering the basics of computer programming</li>
+                                            <li>Applying one's knowledge through practical projects</li>
+                                            <li>Discovering one's aptitude for coding</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Work experiences</h3>
+                                <ul class="timeline-list">
+                                    <li class="timeline-item">               
+                                        <strong>2018 - 2025</strong> - Local Radio Receptionist
+                                        <br><span class="text-muted small">Radio France, Paris</span>  
+                                            <ul class="mt-2 small text-secondary">
+                                                <li>Reception and guidance : physical reception of visitors and guests, informing listeners and directing them to the station's contacts</li>
+                                                <li>Switchboard and call management : administrative switchboard management (answering, screening, routing) and selecting/transferring listeners to the studio for games and interactivity</li>
+                                                <li>Specific situation management : handling all types of on-air situations (sensitive and emergency) and managing prize collections</li>
+                                                <li>Administrative follow-up and listener relations : processing postal and electronic mail, personalized listener follow-up, updating data on business tools, and collecting announcements</li>
+                                                <li>Digital engagement : use of social networks (posting photos, connecting with subscribers)</li>
+                                            </ul>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>2010 - 2017</strong> - Administrative Assistant
+                                        <br><span class="text-muted small">SCP Dens-Viel, Saint-Quentin</span>
+                                            <ul class="mt-2 small text-secondary">
+                                                <li>Reception and administrative support : client reception, guidance, handling requests, and mail management</li>
+                                                <li>Schedule and travel management : appointment scheduling, calendar monitoring, and travel arrangements</li>
+                                                <li>Legal tracking and RPVA (French lawyers' private virtual network) : preparation of legal documents and procedures, deadline monitoring, and use of the RPVA system</li>
+                                                <li>Administrative and accounting management : processing billing, client follow-ups, filing, archiving, and inventory/order management</li>
+                                            </ul>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Projects and portfolio</h3>
+                                <ul class="timeline-list">
+                                        <li class="timeline-item">
+                                        <strong>Konexio project</strong> - <span class="text-muted small">HTML, CSS, JavaScript</span>
+                                        <p class="mt-1 mb-2 small text-secondary">Restaurant food ordering webpage</p>
+    
+                                        <!-- Adding the projet image -->    
+                                        <a href="https://github.com/Julie842/Konexio" target="_blank" rel="noopener noreferrer">
+                                        <img src="img/projet-konexio.png" alt="Konexio project preview" class="img-fluid rounded shadow-sm border mb-3">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>         
+                        </div>
+                    </div>
+
+                    <!-- Skills with logos -->
+                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark mb-4">Skills</h3>
+                            <div class="d-flex justify-content-around align-items-center fs-1 py-3 text-center">
+                            <div>
+                                <i class="devicon-html5-plain colored"></i>
+                                <p class="fs-6 mt-2 text-muted">HTML5</p>
+                            </div>
+                            <div>
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <p class="fs-6 mt-2 text-muted">CSS3</p>
+                            </div>
+                            <div>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <p class="fs-6 mt-2 text-muted">JavaScript</p>
+                            </div>
+                            <div>
+                                    <i class="devicon-wordpress-plain colored"></i>
+                                    <p class="fs-6 mt-2 text-muted">WordPress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+    </div>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en français</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Devicon pour les logos de compétences -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="cv-fr.html">Mon CV</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="cv-fr.html">Français</a>
+            <a class="nav-link" href="cv-en.html">English</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main class="container my-5">
+        <div class="row">
+            
+            <!-- Colonne de gauche -->
+            <aside class="col-md-4 text-center mb-4">
+                <div class="p-4 profile-card shadow-sm">
+                    <img src="img/photo-profil.jpg" alt="Photo de profil" class="img-fluid rounded-circle custom-profile-img mb-3">
+                    <h1 class="h4 mb-1">Julie Gérard</h1>
+                    <p class="text-muted small">Développeur Web & Web Mobile en formation</p>
+                    <hr style="color: var(--sage-light)">
+                    <h2 class="h6 text-uppercase text-secondary mb-3">Coordonnées</h2>
+                    <p class="small mb-1">Email : julie.gerard743@sfr.fr</p>
+                    <p class="small mb-4">Tél : 07 62 96 12 00</p>
+                    
+                    <div class="d-flex justify-content-center gap-3 my-3">
+                        <a href="https://www.linkedin.com/in/julie-gerard-417019198" target="_blank" rel="noopener noreferrer" class="text-dark fs-4" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Julie842" target="_blank" rel="noopener noreferrer" class="text-dark fs-4" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <a href="mailto:julie.gerard743@sfr.fr" class="btn btn-custom-primary w-100">Me contacter</a>
+                </div>
+            </aside>
+
+            <!-- Colonne de droite avec menu d'onglets -->
+            <section class="col-md-8">
+                
+                <ul class="nav nav-pills mb-4 justify-content-center" id="cvTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="formations-tab" data-bs-toggle="pill" data-bs-target="#formations" type="button" role="tab" aria-controls="formations" aria-selected="true">Formations</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="experiences-tab" data-bs-toggle="pill" data-bs-target="#experiences" type="button" role="tab" aria-controls="experiences" aria-selected="false">Expériences</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="projets-tab" data-bs-toggle="pill" data-bs-target="#projets" type="button" role="tab" aria-controls="projets" aria-selected="false">Projets</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="skills-tab" data-bs-toggle="pill" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Compétences</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="cvTabContent">
+                    
+                    <div class="tab-pane fade show active" id="formations" role="tabpanel" aria-labelledby="formations-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Formations</h3>
+                                <ul class="timeline-list">
+                                    <li class="timeline-item">
+                                        <strong>Depuis avril 2026</strong> - Formation Développeur Web & Web Mobile 
+                                        <br><span class="text-muted small">Skill & You, Montrouge</span>
+                                        <ul class="mt-2 small text-secondary">
+                                            <li>Connaître les langages de programmation</li>
+                                            <li>Acquérir la connaissance des différents outils</li>
+                                            <li>Acquérir des compétences en conception et UX/UI</li>
+                                            <li>Maîtriser l’hébergement et le déploiement</li>
+                                        </ul>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>2025</strong> - Formation DigiStart 
+                                        <br><span class="text-muted small">Konexio, Paris</span>
+                                        <ul class="mt-2 small text-secondary">
+                                            <li>Découvrir les bases du développement web</li>
+                                            <li>Mettre en pratique ses connaissances via des projets concrets</li>
+                                            <li>Détecter son appétence pour le code</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Expériences professionnelles</h3>
+                                <ul class="timeline-list">
+                                    <li class="timeline-item">               
+                                        <strong>2018 - 2025</strong> - Chargée d'accueil de station de radio locale
+                                        <br><span class="text-muted small">Radio France, Paris</span>  
+                                            <ul class="mt-2 small text-secondary">
+                                                <li>Accueil et orientation : accueil physique des visiteurs et des invités, information des auditeurs et orientation vers les interlocuteurs de la station</li>
+                                                <li>Standard et gestion des appels : gestion du standard administratif (réponse, filtrage, orientation) et sélection/transfert en studio des auditeurs pour les jeux et l'interactivité</li>
+                                                <li>Gestion des situations spécifiques : traitement de tous types de situations sur les antennes (délicates et d'urgence) et gestion du retrait des cadeaux</li>
+                                                <li>Suivi administratif et relation auditeurs : traitement du courrier postal et électronique, suivi personnalisé des auditeurs, mise à jour des données sur l'outil métier et recueil des annonces</li>
+                                                <li>Animation numérique : utilisation des réseaux sociaux (publication de photos, lien avec les abonnés)</li>
+                                            </ul>
+                                    </li>    
+                                    <li class="timeline-item">
+                                        <strong>2010 - 2017</strong> - Employée administrative
+                                        <br><span class="text-muted small">SCP Dens-Viel, Saint-Quentin</span>
+                                            <ul class="mt-2 small text-secondary">
+                                                <li>Accueil et secrétariat : accueil des clients, orientation, réponses aux demandes et gestion du courrier</li>
+                                                <li>Gestion d'agendas et déplacements : organisation des rendez-vous, suivi des plannings et gestion des déplacements</li>
+                                                <li>Suivi juridique et RPVA : préparation des documents et procédures juridiques, suivi des échéances et utilisation du RPVA</li>
+                                                <li>Gestion administrative et comptable : traitement de la facturation, relances clients, classement, archivage et gestion des stocks/commandes</li>
+                                            </ul>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="projets" role="tabpanel" aria-labelledby="projets-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark">Projets et réalisations</h3>
+                                <ul class="timeline-list">
+                                    <li class="timeline-item">
+                                        <strong>Projet Konexio</strong> - <span class="text-muted small">HTML, CSS, JavaScript</span>
+                                        <p class="mt-1 mb-2 small text-secondary">Page internet de commande de plats dans un restaurant</p>
+    
+                                        <!-- Ajout de l'image du projet -->
+                                        <a href="https://github.com/Julie842/Konexio" target="_blank" rel="noopener noreferrer">
+                                        <img src="img/projet-konexio.png" alt="Aperçu du projet Konexio" class="img-fluid rounded shadow-sm border mb-3">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>         
+                        </div>
+                    </div>
+
+                    <!-- Compétences avec logos -->
+                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                        <div class="card custom-card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-dark mb-4">Compétences techniques</h3>
+                                <div class="d-flex justify-content-around align-items-center fs-1 py-3 text-center">
+                                    <div>
+                                        <i class="devicon-html5-plain colored"></i>
+                                        <p class="fs-6 mt-2 text-muted">HTML5</p>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-css3-plain colored"></i>
+                                        <p class="fs-6 mt-2 text-muted">CSS3</p>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-javascript-plain colored"></i>
+                                        <p class="fs-6 mt-2 text-muted">JavaScript</p>
+                                    </div>
+                                    <div>
+                                        <i class="devicon-wordpress-plain colored"></i>
+                                        <p class="fs-6 mt-2 text-muted">WordPress</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

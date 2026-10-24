@@ -1,0 +1,140 @@
+:root {
+    --sage-light: #C7D3B5;
+    --sage-medium: #689D71;
+    --linen-bg: #FAF0E6;
+    --forest-dark: #095228;
+    --white: #ffffff;
+}
+
+/* Base de la page */
+body {
+    background-color: var(--linen-bg);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333333;
+}
+
+/* Typographies et titres */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--forest-dark);
+    font-weight: 600;
+}
+
+/* Barre de navigation personnalisée */
+.custom-navbar {
+    background-color: var(--forest-dark) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.custom-navbar .nav-link {
+    color: rgba(250, 240, 230, 0.8) !important;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+/* Blocs profil et cartes */
+.profile-card {
+    background-color: var(--white);
+    border: 1px solid rgba(199, 211, 181, 0.4);
+    border-radius: 16px;
+}
+
+.custom-card {
+    background-color: var(--white);
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(104, 157, 113, 0.08) !important;
+}
+
+/* Titres des sections de CV */
+.card-title {
+    border-bottom: 2px solid var(--sage-light);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+/* Encadrement adouci de la photo */
+.custom-profile-img {
+    border: 4px solid var(--sage-light);
+    padding: 4px;
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+    width: 150px;       /* Largeur fixe */
+    height: 150px;      /* Même hauteur pour garantir le carré */
+    object-fit: cover;  /* Rogne l'image proprement sans l'étirer */
+}
+
+.profile-card:hover .custom-profile-img {
+    border-color: var(--sage-medium);
+}
+
+/* Bouton d'action apaisant */
+.btn-custom-primary {
+    background-color: var(--forest-dark);
+    border-color: var(--forest-dark);
+    color: var(--linen-bg);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--sage-medium);
+    border-color: var(--sage-medium);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(104, 157, 113, 0.15);
+}
+
+/* Puces personnalisées pour l'esthétique moderne */
+.timeline-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.timeline-item::before {
+    content: '•';
+    color: var(--sage-medium);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+/* Changer la couleur de fond et du texte de l'onglet actif */
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color: #689D71; /* Utilisation du vert moyen pour plus de cohérence */
+    color: #ffffff !important;
+}
+
+/* Changer la couleur du texte des onglets au survol de la souris */
+.nav-pills .nav-link:hover {
+    color: var(--forest-dark) !important;
+}
+
+/* Ajustement pour espacer les logos de compétences sur mobile */
+#skills .d-flex {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
